@@ -10,6 +10,9 @@ Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to d
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
 
+## Changes
+I changed the scraper to scrape the newest podcast episode from thedp.com instead of the newest headline. I did this by adapting the url requested for BS4 to navigate and finding the first appropriate header in the HTML referring to the podcast episode name as opposed to a headline link.
+
 ## Overview
 
 The workflow defined in `.github/workflows/scrape.yaml` runs on a defined schedule to:
