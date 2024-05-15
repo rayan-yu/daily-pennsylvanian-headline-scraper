@@ -1,3 +1,4 @@
+# README
 ## Usage & 5/14 Update
 Confirmed the scraper still functions as desired per the final HW2 deliverables.
 
