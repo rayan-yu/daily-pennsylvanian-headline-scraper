@@ -1,3 +1,15 @@
+## Usage & 5/14 Update
+Confirmed the scraper still functions as desired per the final HW2 deliverables.
+
+How to use:
+ - Download the repository
+ - Download dependencies in script.py
+ - Run script.py
+ - Note the output printed and saved into data/daily_pennsylvanian_headlines.json
+
+## Changes
+I changed the scraper to scrape the newest podcast episode from thedp.com instead of the newest headline. I did this by adapting the url requested for BS4 to navigate and finding the first appropriate header in the HTML referring to the podcast episode name as opposed to a headline link. This corresponded to a standard-link and h3 element. As an avid listener of podcasts via Apple Podcasts myself, this helps me stay updated on what new episodes the Penn ecosystem is providing and their clip of production.
+
 # Basic Git Scraper Template
 
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
@@ -9,9 +21,6 @@ The key benefit is automating web scrapers to run on a schedule with little over
 Tools like GitHub Actions, GitLab CI and others make git scraping adaptable to diverse sites and data needs. The scraping logic just needs to output data serialized formats like CSV, JSON etc which gets committed back to git. This makes the data easily consumable downstream for analysis and vis.
 
 This template includes a sample workflow to demonstrate the core git scraping capabilities. Read on to learn how to customize it!
-
-## Changes
-I changed the scraper to scrape the newest podcast episode from thedp.com instead of the newest headline. I did this by adapting the url requested for BS4 to navigate and finding the first appropriate header in the HTML referring to the podcast episode name as opposed to a headline link.
 
 ## Overview
 
