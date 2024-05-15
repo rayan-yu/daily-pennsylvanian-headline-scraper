@@ -11,6 +11,8 @@ How to use:
 ## Changes
 I changed the scraper to scrape the newest podcast episode from thedp.com instead of the newest headline. I did this by adapting the url requested for BS4 to navigate and finding the first appropriate header in the HTML referring to the podcast episode name as opposed to a headline link. This corresponded to a standard-link and h3 element. As an avid listener of podcasts via Apple Podcasts myself, this helps me stay updated on what new episodes the Penn ecosystem is providing and their clip of production.
 
+--
+
 # Basic Git Scraper Template
 
 This template provides a starting point for **git scraping**—the technique of scraping data from websites and automatically committing it to a Git repository using workflows, [coined by Simon Willison](https://simonwillison.net/2020/Oct/9/git-scraping/).
